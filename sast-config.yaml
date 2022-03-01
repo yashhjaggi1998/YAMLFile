@@ -1,4 +1,12 @@
+resources:
+  repositories:
+    - repository: VulnerableCode
+      type: git
+      name: JavaVulnerableCode
+      ref: master
+
 steps:
+- checkout: VulnerableCode
 - task: YashhJaggi.cxsast.cx-scan-task.Application security testing@2022
   displayName: 'Application security testing'
   inputs:
@@ -7,7 +15,6 @@ steps:
     enableProxy: false
     enableSastScan: true
     CheckmarxService: 9.4SAST
-    preset: Android
     fullTeamName: /CxServer
     projectcustomfields: 'Key1:Value100'
     customfields: 'Key1:Value10'
