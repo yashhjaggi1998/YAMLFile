@@ -13,7 +13,7 @@ steps:
     fullTeamName: /CxServer
     sastCaChainFilePath: ''
     overrideProjectSettings: false
-    incScan: true
+    incScan: false
     fullScansScheduled: true
     fullScanCycle: 5
     forceScan: false
