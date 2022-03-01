@@ -1,12 +1,5 @@
-resources:
-  repositories:
-    - repository: VulnerableCode
-      type: git
-      name: JavaVulnerableCode
-      ref: master
 
 steps:
-- checkout: VulnerableCode
 - task: YashhJaggi.cxsast.cx-scan-task.Application security testing@2022
   displayName: 'Application security testing'
   inputs:
