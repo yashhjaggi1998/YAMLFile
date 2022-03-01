@@ -9,28 +9,18 @@ steps:
     CheckmarxService: 9.4SAST
     sastProxyUrl: ''
     preset: Android
-    customPreset: ''
+    customPreset: 'All'
     fullTeamName: /CxServer
-    sastCaChainFilePath: ''
     overrideProjectSettings: false
     incScan: false
-    fullScansScheduled: true
+    fullScansScheduled: false
     fullScanCycle: 5
-    forceScan: false
+    forceScan: true
     folderExclusion: 'cvs, .svn, .hg , .git, .bzr, bin , obj,  backup, .idea, node_modules'
     fileExtension: 'cvs, .svn, .hg , .git, .bzr, bin , obj,  backup, .idea, node_modules'
-    scanTimeout: 5
-    projectcustomfields: 'Key1:Value1'
-    customfields: 'Key1:Value1'
+    scanTimeout: 15
+    projectcustomfields: 'Key1:Value100'
+    customfields: 'Key1:Value10'
     denyProject: false
     comment: 'Generating YAML File'
-    postScanAction: Trial
     generatePDFReport: true
-    vulnerabilityThreshold: true
-    failBuildForNewVulnerabilitiesEnabled: true
-    failBuildForNewVulnerabilitiesSeverity: MEDIUM
-    high: 10
-    medium: 10
-    low: 10
-    enablePolicyViolations: false
-    avoidDuplicateScans: false
