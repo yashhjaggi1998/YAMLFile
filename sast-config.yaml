@@ -14,7 +14,7 @@ steps:
     syncMode: true
     enableProxy: false
     enableSastScan: true
-    CheckmarxService: 9.4SAST
+    CheckmarxService: 9.3SAST
     fullTeamName: /CxServer
     projectcustomfields: 'Key1:Value100'
     customfields: 'Key1:Value10'
