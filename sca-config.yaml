@@ -2,8 +2,8 @@ resources:
   repositories:
     - repository: VulnerableCode
       type: git
-      endpoint: Java Vulnerable Code
-      name: Java Vulnerable Code
+      endpoint: JavaVulnerableCode
+      name: JavaVulnerableCode
 
 steps:
 - checkout: VulnerableCode
