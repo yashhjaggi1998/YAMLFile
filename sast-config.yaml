@@ -9,7 +9,7 @@ steps:
     CheckmarxService: 9.4SAST
     sastProxyUrl: ''
     preset: Android
-    customPreset: 'All'
+    customPreset: ''
     fullTeamName: /CxServer
     sastCaChainFilePath: ''
     overrideProjectSettings: false
