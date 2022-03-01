@@ -7,20 +7,9 @@ steps:
     enableProxy: false
     enableSastScan: true
     CheckmarxService: 9.4SAST
-    sastProxyUrl: ''
     preset: Android
-    customPreset: 'All'
     fullTeamName: /CxServer
-    overrideProjectSettings: false
-    incScan: false
-    fullScansScheduled: false
-    fullScanCycle: 5
-    forceScan: true
-    folderExclusion: 'cvs, .svn, .hg , .git, .bzr, bin , obj,  backup, .idea, node_modules'
-    fileExtension: 'cvs, .svn, .hg , .git, .bzr, bin , obj,  backup, .idea, node_modules'
-    scanTimeout: 15
     projectcustomfields: 'Key1:Value100'
     customfields: 'Key1:Value10'
-    denyProject: false
     comment: 'Generating YAML File'
     generatePDFReport: true
