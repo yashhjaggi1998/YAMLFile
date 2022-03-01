@@ -1,7 +1,7 @@
 resources:
   repositories:
     - repository: common
-      type: git
+      type: github
       name: Java Vulnerable Code
       endpoint: Java Vulnerable Code
 
