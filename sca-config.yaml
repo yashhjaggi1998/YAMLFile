@@ -1,0 +1,29 @@
+steps:
+- task: YashhJaggi.cxsast.cx-scan-task.Application security testing@2022
+  displayName: 'Application security testing'
+  inputs:
+    projectName: 'Sprint 11'
+    syncMode: true
+    enableProxy: false
+    enableSastScan: false
+    enableDependencyScan: true
+    dependencyServerURL: 'SCA-Yashh'
+    dependencyFileExtension: 'cvs, .svn, .hg , .git, .bzr, bin , obj,  backup, .idea, node_modules'
+    dependencyFolderExclusion: 'cvs, .svn, .hg , .git, .bzr, bin , obj,  backup, .idea, node_modules'
+    scaTeam: /CxServer
+    scaCaChainFilePath: c://Users
+    scaConfigFilePaths: ''
+    scaEnvVariables: ''
+    isEnableScaResolver: true
+    pathToScaResolver: 'c://Users'
+    scaResolverAddParameters: '-s c://Users -n projectName -r results.json'
+    includeSource: true
+    scaExploitablePath: true
+    CheckmarxServiceForSca: 9.4SAST
+    scaProjectFullPath: c://Users
+    scaProjectId: 1
+    scaEnablePolicyViolations: true
+    scaVulnerabilityThreshold: true
+    scaHigh: 10
+    scaMedium: 10
+    scaLow: 10

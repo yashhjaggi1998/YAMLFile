@@ -1,0 +1,36 @@
+steps:
+- task: YashhJaggi.cxsast.cx-scan-task.Application security testing@2022
+  displayName: 'Application security testing'
+  inputs:
+    projectName: 'Sprint 11'
+    syncMode: true
+    enableProxy: false
+    enableSastScan: true
+    CheckmarxService: 9.4SAST
+    sastProxyUrl: ''
+    preset: Android
+    customPreset: 'All'
+    fullTeamName: /CxServer
+    sastCaChainFilePath: ''
+    overrideProjectSettings: false
+    incScan: true
+    fullScansScheduled: true
+    fullScanCycle: 5
+    forceScan: false
+    folderExclusion: 'cvs, .svn, .hg , .git, .bzr, bin , obj,  backup, .idea, node_modules'
+    fileExtension: 'cvs, .svn, .hg , .git, .bzr, bin , obj,  backup, .idea, node_modules'
+    scanTimeout: 5
+    projectcustomfields: 'Key1:Value1'
+    customfields: 'Key1:Value1'
+    denyProject: false
+    comment: 'Generating YAML File'
+    postScanAction: Trial
+    generatePDFReport: true
+    vulnerabilityThreshold: true
+    failBuildForNewVulnerabilitiesEnabled: true
+    failBuildForNewVulnerabilitiesSeverity: MEDIUM
+    high: 10
+    medium: 10
+    low: 10
+    enablePolicyViolations: false
+    avoidDuplicateScans: false
