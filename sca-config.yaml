@@ -1,11 +1,11 @@
 resources:
   repositories:
-    - repository: common
-      type: github
-      name: Java Vulnerable Code
+    - repository: VulnerableCode
+      type: git
       endpoint: Java Vulnerable Code
 
 steps:
+- checkout: VulnerableCode
 - task: YashhJaggi.cxsast.cx-scan-task.Application security testing@2022
   displayName: 'Application security testing'
   inputs:
