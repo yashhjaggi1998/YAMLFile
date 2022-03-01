@@ -13,7 +13,7 @@ steps:
     projectName: 'Sprint 11'
     enableProxy: false
     enableSastScan: true
-    CheckmarxService: 'SASt'
+    CheckmarxService: '9.4SAST'
     fullTeamName: '/CxServer'
     incScan: false
     projectcustomfields: 'Key1:Value100'
